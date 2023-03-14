@@ -1,0 +1,9 @@
+package com.ty;
+
+public interface StudentManagementSystem {
+	void saveStudent();
+	void deleteStudent();
+	void updateStudent();
+	void getStudentByMarks();
+	void getAllStudent();
+}

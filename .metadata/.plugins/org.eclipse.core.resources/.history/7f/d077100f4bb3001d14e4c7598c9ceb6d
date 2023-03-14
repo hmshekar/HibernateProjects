@@ -1,0 +1,23 @@
+package emptable;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class emp {
+	public static void main(String[] args) {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");	
+			Connection connection =DriverManager.getConnection("jdbc:mysql://localhost:3306/oracleemp","root","root");
+			Statement statement=connection.createStatement();
+			statement.execute("insert into emp values( 7369,'SMITH','CLERK,7902,'17-DEC-80', 800,,20)");
+			connection.close();
+			System.out.println("Data stored");
+		
+		}
+		catch(ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
+	}
+}

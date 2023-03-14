@@ -1,0 +1,8 @@
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.lang.ReflectiveOperationException"><rhs name\="java.lang.ClassNotFoundException"/></lhs><lhs name\="java.lang.Exception"><rhs name\="java.lang.ClassNotFoundException"/></lhs><lhs name\="java.lang.Throwable"><rhs name\="java.lang.ClassNotFoundException"/></lhs><lhs name\="java.lang.ClassNotFoundException"><rhs name\="java.lang.ClassNotFoundException"/></lhs><lhs name\="edbms.Employee"><rhs name\="edbms.Employee"/></lhs><lhs name\="edbms.EmployeeManagementSystem"><rhs name\="edbms.EmployeeManagementSystemImpl"/></lhs><lhs name\="com.ty.StudentManagementSystem"><rhs name\="com.ty.StudentImpl"/></lhs><lhs name\="com.ty.StudentImpl"><rhs name\="com.ty.StudentImpl"/></lhs><lhs name\="java.util.Iterator"><rhs name\="java.util.Scanner"/></lhs><lhs name\="java.io.Closeable"><rhs name\="java.util.Scanner"/></lhs><lhs name\="java.lang.AutoCloseable"><rhs name\="java.util.Scanner"/></lhs></history>
+content_assist_number_of_computers=12
+eclipse.preferences.version=1
+org.eclipse.jdt.ui.formatterprofiles.version=22
+spelling_locale_initialized=true
+typefilter_migrated_2=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

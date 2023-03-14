@@ -1,0 +1,43 @@
+package com.ty;
+import java.util.Scanner;
+public class StudentImpl implements StudentManagementSystem{
+	Scanner scan=new Scanner(System.in);
+	@Override
+	public void saveStudent() {
+		// TODO Auto-generated method stub
+		System.out.println("Enter Student id");
+		int id=scan.nextInt();
+		System.out.println("Enter Student id");
+		String name=scan.next();
+		System.out.println("Enter Student id");
+		int age=scan.nextInt();
+		System.out.println("Enter Student id");
+		double marks=scan.nextDouble();
+		
+	}
+
+	@Override
+	public void deleteStudent() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void updateStudent() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void getStudentByMarks() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void getAllStudent() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

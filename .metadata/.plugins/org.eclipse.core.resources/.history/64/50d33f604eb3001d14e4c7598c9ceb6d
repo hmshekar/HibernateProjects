@@ -1,0 +1,31 @@
+package emptable;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class emp {
+	public static void main(String[] args) {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");	
+			Connection connection =DriverManager.getConnection("jdbc:mysql://localhost:3306/oracleemp","root","root");
+			Statement statement=connection.createStatement();
+//			statement.execute("insert into emp values( 7369,'SMITH','CLERK',7902,'1980-12-17', 800,0,20)");
+//			statement.execute("insert into emp values( 7499 ,'ALLEN','SALESMAN',7698,'1981-02-21',1600,300,30)");
+//			statement.execute("insert into emp values(  7521 ,'WARD','SALESMAN',7698,'1981-02-22',1250,500, 30)");
+			statement.execute("insert into emp values( 7566 ,'JONES',' MANAGER',7839,'1981-04-02',2975,null,20)");
+//			statement.execute("insert into emp values( 7369,'SMITH','CLERK',7902,'1980-12-17', 800,0,20)");
+//			statement.execute("insert into emp values( 7369,'SMITH','CLERK',7902,'1980-12-17', 800,0,20)");
+//			statement.execute("insert into emp values( 7369,'SMITH','CLERK',7902,'1980-12-17', 800,0,20)");
+//			statement.execute("insert into emp values( 7369,'SMITH','CLERK',7902,'1980-12-17', 800,0,20)");
+			statement.execute("update emp set comm=null where empno=7369 ");
+			connection.close();
+			System.out.println("Data stored");
+		
+		}
+		catch(ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
+	}
+}

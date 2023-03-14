@@ -1,0 +1,9 @@
+package edbms;
+
+public class Solution {
+	public static void main(String[] args) {
+		EmployeeManagementSystem emp=new EmployeeManagementSystemImpl();
+		emp.addEmployee();
+		emp.displayEmployee();
+	}
+}

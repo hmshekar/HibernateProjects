@@ -1,0 +1,42 @@
+package com.ty;
+
+import java.util.Scanner;
+
+public class Student {
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		StudentManagementSystem std=new StudentImpl();
+		System.out.println("Welcome to Student Table");
+		while(true) {
+			System.out.println("1.AddStudent\n2.DeleteStudent\n3.UpdateStudent\n4.GetStudentByMarks\n5.GetAllStudent");
+			System.out.println("-----Enter Choice------");
+			int choice=scan.nextInt();
+			switch(choice) {
+			case 1:
+				std.addStudent();
+				break;
+			case 2:
+				std.deleteStudent();
+				break;
+			case 3:
+				std.updateStudent();
+				break;
+			case 4:
+				std.getAllStudent();
+				break;
+			case 5:
+				std.getAllStudent();
+				break;
+			default:
+				System.out.println("Invalid choice");
+			}
+
+
+
+
+
+		}
+
+
+	}
+}

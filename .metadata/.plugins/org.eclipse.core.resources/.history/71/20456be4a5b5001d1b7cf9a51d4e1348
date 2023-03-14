@@ -1,0 +1,31 @@
+package edbms;
+import java.util.Scanner;
+public class Solution {
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		EmployeeManagementSystem emp=new EmployeeManagementSystemImpl();
+		while(true) {
+			System.out.println("Enter Choice");
+			System.out.println("1.AddEmp\n2.DispalyEmp\n3.Display AllEmp");
+			int choice=scan.nextInt();
+			switch(choice) {
+			case 1:
+				emp.addEmployee();
+				break;
+			case 2:
+				emp.displayEmployee();
+				break;
+			case 3:
+				emp.displayAllEmployee();
+				break;
+			case 4:
+			case 5:
+			case 6:
+			case 7:
+			case 8:
+			case 9:
+				
+			}
+		}
+	}
+}

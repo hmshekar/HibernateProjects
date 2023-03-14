@@ -1,0 +1,5 @@
+package customeexception;
+
+public class InvalidChoiceException {
+
+}

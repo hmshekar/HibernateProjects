@@ -1,0 +1,17 @@
+package emptable;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class emp {
+	public static void main(String[] args) {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");	
+			Connection connection =DriverManager.getConnection("","","");
+		}
+		catch(ClassNotFoundException |  e) {
+			e.printStackTrace();
+		}
+	}
+}
